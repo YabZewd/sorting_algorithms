@@ -3,11 +3,12 @@
 
 /**
  * print_array - Prints an array of integers
- *
  * @array: The array to be printed
  * @size: Number of elements in @array
+ *
+ * Description: This function prints the elements of an integer array
+ *              separated by commas.
  */
-
 void print_array(const int *array, size_t size)
 {
     size_t i;
