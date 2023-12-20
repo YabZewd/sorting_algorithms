@@ -16,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return ('\0');
 	p = malloc(nmemb * size);
-	if (p == '\0')
+	if (p == NULL)
 		return ('\0');
 	for (i = 0; i < (nmemb * size); i++)
 		p[i] = '\0';
@@ -31,10 +31,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 void counting_sort(int *array, size_t size)
 {
-	int index, maximun = 0, *counter = '\0', *tmp = '\0';
+	int index, maximun = 0, *counter = NULL, *tmp = NULL;
 	size_t i;
 
-	if (array == '\0' || size < 2)
+	if (array == NULL || size < 2)
 		return;
 	/* find maximun number */
 	for (i = 0; i < size; i++)
