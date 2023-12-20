@@ -25,13 +25,11 @@ listint_t *swap_node(listint_t *node, listint_t **list)
 		*list = current;
 	return (current);
 }
-
 /**
  *cocktail_sort_list - this is a cocktail sort implementation
  *working on a double linked lists
  *@list: list
  */
-
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *node;
